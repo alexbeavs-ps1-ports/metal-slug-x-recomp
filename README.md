@@ -22,6 +22,10 @@ Metal Slug X recompiled for modern systems using psxrecomp.
 Scaffolded with the New Project Layout. See
 `psxrecomp/docs/GAME_PROJECT_SETUP.md` for the full flow.
 
+<!-- release-standard:bios -->
+**BIOS:** SCPH-1001 (USA) retail BIOS, 524288 bytes, SHA-256 `71af94d1e47a68c11e8fdb9f8368040601514a42a5a399cda48c7d3bff1e99d3`. Supply your own dump; releases do not use OpenBIOS.
+<!-- /release-standard:bios -->
+
 <!-- retcomm-readme-launcher -->
 ## RetComM Launcher
 
@@ -50,8 +54,8 @@ BIOS/ROM/save plumbing so you are not stuck repeating each game’s wizard by ha
 ## Legal
 
 You must own the original game. Disc images under `disc/` are gitignored and
-must never be committed. Retail BIOS dumps are not redistributed; OpenBIOS is
-used for Generate unless you supply your own SCPH locally.
+must never be committed. Retail BIOS dumps are not redistributed. OpenBIOS is not used: first-run
+Generate needs your own legally dumped SCPH-1001 image.
 
 Default app icon: `assets/psxrecomp.ico` (and `.png` / `.svg`) — RetComM-themed controller mark from `psxrecomp/assets/`. Windows builds embed it via `APP_ICON`.
 

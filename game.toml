@@ -6,7 +6,9 @@ name = "Metal Slug X"
 id = "SLUS-01212"
 players = 2
 exe = "disc/SLUS_012.12"
-disc = "disc/disc1.cue"
+disc = "disc/Metal Slug X (USA).cue"
+discs = ["disc/Metal Slug X (USA).cue"]
+disc_serials = ["SLUS-01212"]
 load_address = "0x80010000"
 entry_pc = "0x80082A44"
 text_size = "0x00097800"
@@ -15,8 +17,8 @@ stack_base = "0x801FFFF0"
 # Digests are for data Track 01 (first BINARY FILE / TRACK 01).
 [prepare_disc]
 out_dir = "disc"
-bin_name = "disc1.bin"
-cue_name = "disc1.cue"
+bin_name = "Metal Slug X (USA).bin"
+cue_name = "Metal Slug X (USA).cue"
 boot_exe = "SLUS_012.12"
 known_sizes = [104315904]
 known_md5 = [
@@ -30,6 +32,7 @@ known_crc32 = [
 ]
 
 [recompiler]
+bios_config = "psxrecomp/bios/SCPH1001.toml"
 seeds = "seeds/ghidra_funcs.txt"
 out_dir = "generated"
 strict = true
