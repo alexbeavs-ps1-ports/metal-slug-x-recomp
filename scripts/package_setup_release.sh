@@ -57,5 +57,6 @@ exec bash "${PACKAGER}" \
   --project-file THIRD_PARTY_NOTICES.md \
   --project-file README.md \
   --project-dir seeds \
+  --project-dir assets \
   --project-dir launcher_assets \
   "${EXTRA_PROJECT[@]}"
